@@ -1,0 +1,26 @@
+{
+    "name": "qqruz/laranews",
+    "description": "News API package for laravel",
+    "type": "laravel-plugin",
+    "license": "MIT",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "QQruz\\Laranews\\": "src"
+        },
+        "classmap": [
+            "database/migrations"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "QQruz\\Laranews\\LaranewsServiceProvider"
+            ],
+            "aliases": {
+                "Laranews": "QQruz\\Laranews\\Facades\\LaranewsFacade",
+                "Newsapi": "QQruz\\Laranews\\Facades\\NewsapiFacade"
+            }
+        }
+    }
+}
