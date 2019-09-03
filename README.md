@@ -2,11 +2,10 @@
 ## News API implementation for laravel
 
 ### Instalation
-run
 ```php
 composer require qqruz/laranews
 ```
-and add yours news API key to laravel's .env file
+add yours news API key to laravel's .env file
 ```
 NEWS_API_KEY=yourapikey
 ```
@@ -79,6 +78,7 @@ Laranews::headlines();
 ```
 
 **Set URL parameters**
+
 Sets URL parameters for API call. Check news api's documentation for more info.
 ```
 set{$property}($value) 
@@ -110,6 +110,7 @@ $articles = $articles->get()->articles;
 ```
 
 **Saving**
+
 Saves request and results
 ```
 // optional name is for identifing the request
@@ -140,6 +141,7 @@ Laranews::everything()->setQInTitle('laravel')->get()
 ```
 
 **Loading**
+
 Loads the request from saved model.
 If string is provided it will look for a model with that name.
 If integer is provided it will look for a model with that Id.
@@ -180,6 +182,7 @@ Laranews::topHeadlines([
 ```
 
 **Middleware**
+
 You can add update trigger to specific route or group.
 Argument passed represents minimum time between the updates, so you can save api calls.
 ```php
@@ -206,6 +209,7 @@ Route::get('/news/business_doctors', function () {
 ``` 
 
 **Scheduler**
+
 For now you can use scheduler only to update all flaged requests.
 To enable scheduler you need to edit config file first
 ```php
