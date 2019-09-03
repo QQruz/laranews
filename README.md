@@ -62,6 +62,7 @@ foreach ($requests as $request) {
 
 #### Available methods
 **Endpoints**
+
 Sets up parameters for chosen endpoint. One of these methods should be first to call:
 ```
 headlines() / topHeadlines()
