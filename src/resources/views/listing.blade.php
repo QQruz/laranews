@@ -1,3 +1,4 @@
+{{-- If you know how to inject model from config please let me know--}}
 @inject('request', \QQruz\Laranews\Request)
 <style>
 #laranews-listing td, #laranews-listing tbody th{
