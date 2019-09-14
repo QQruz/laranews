@@ -3,6 +3,7 @@
     "description": "News API package for laravel",
     "type": "laravel-plugin",
     "license": "MIT",
+    "version": "1.0.0",
     "require": {},
     "autoload": {
         "psr-4": {
