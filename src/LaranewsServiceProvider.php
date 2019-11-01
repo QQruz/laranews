@@ -48,9 +48,9 @@ class LaranewsServiceProvider extends ServiceProvider
 
         $this->loadViewsFrom(__DIR__.'/resources/views', 'laranews');
 
-        $this->publishes([
-            __DIR__ . '../config.php' => config_path('laranews.php'),
-        ], 'config');
+        // $this->publishes([
+        //     __DIR__ . '/../config.php' => config_path('laranews.php'),
+        // ], 'config');
 
         $this->publishes([
             __DIR__ . '/database/migrations/' => database_path('migrations'),
